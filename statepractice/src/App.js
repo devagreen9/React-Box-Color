@@ -19,6 +19,15 @@ export default class App extends Component {
     console.log('click counter ===>', this.state.clickCounter)
   }
 
+  onNextChange = (e) => {
+    this.setState({
+      color: 'purple',
+      clickCounter: this.state.clickCounter + 1
+    })
+    console.log('click counter ===>', this.state.clickCounter)
+  }
+
+
   render() {
     return (
       <div className='App'>
@@ -27,7 +36,10 @@ export default class App extends Component {
         
         >
         </div>
-        <button onClick={this.onChange} >Click Me!</button>
+        <div className='buttons'>
+          <button onClick={this.onChange} >Click Me!</button>
+          <button onClick={this.onNextChange}>No! Click Me!</button>
+        </div>
       </div>
     )
   }
