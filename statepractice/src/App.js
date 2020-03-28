@@ -19,8 +19,12 @@ export default class App extends Component {
     console.log('click counter ===>', this.state.clickCounter)
   }
 
-  toggleColor(e) {
-
+  purple = false
+  if toggle is off purple would Show 
+  if toggle is on orange would show 
+  orange = true 
+  toggleButton() {
+    if ()
   }
 
   render() {
@@ -30,8 +34,8 @@ export default class App extends Component {
         <div className='colorBox' style={{backgroundColor: this.state.color}}
         onClick={this.onChange}
         >
-          <p>Click Me!</p>
         </div>
+        <button>Click Me!</button>
       </div>
     )
   }
