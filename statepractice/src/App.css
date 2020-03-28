@@ -1,10 +1,41 @@
-. {
+button {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 5px 5px 7px white;
+  font-size: 2.5rem;
+  letter-spacing: 0.4rem;
+  text-shadow: 3px 3px 2px white;
+}
+
+/* .colorBox {
+  width: 300px;
+  height: 300px;
+  transition: .3s;
+  color: cyan;
+} */
+
+h1{
+  color: brown;
+  font-size: 2.5rem;
+  margin: 1rem auto;
+  text-shadow: 2px 2px 4px black;
   font-family: 'Lato', sans-serif;
 }
 
 .colorBox {
   width: 300px;
   height: 300px;
-  transition: .3s;
-  color: cyan;
+  transition: 0.3s;
+}
+
+#root {
+  margin: 20px auto;
+  display: flex;
+  font-family: column wrap;
+  justify-content: center;
+  align-items: center;
 }
