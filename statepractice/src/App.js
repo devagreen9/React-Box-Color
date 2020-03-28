@@ -7,13 +7,8 @@ export default class App extends Component {
 
     this.state = {
       color: 'purple',
-      clickCounter: 0,
-      this.handleChange = this.handleChange.bind(this);
+      clickCounter: 0
     }
-  }
-
-  handleChange(purple) {
-    this.setState({  });
   }
 
   onChange = (e) => {
@@ -24,23 +19,15 @@ export default class App extends Component {
     console.log('click counter ===>', this.state.clickCounter)
   }
 
-  purple = false
-  if toggle is off purple would Show 
-  if toggle is on orange would show 
-  orange = true 
-  toggleButton() {
-    if ()
-  }
-
   render() {
     return (
       <div className='App'>
         <h1>Box Color Change</h1>
         <div className='colorBox' style={{backgroundColor: this.state.color}}
-        onClick={this.onChange}
+        
         >
         </div>
-        <button>Click Me!</button>
+        <button onClick={this.onChange} >Click Me!</button>
       </div>
     )
   }
