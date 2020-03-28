@@ -19,6 +19,10 @@ export default class App extends Component {
     console.log('click counter ===>', this.state.clickCounter)
   }
 
+  toggleColor(e) {
+
+  }
+
   render() {
     return (
       <div className='App'>
